@@ -1,0 +1,29 @@
+{
+  "name": "arxiv-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "arxiv": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "fast-xml-parser": "^5.2.5",
+    "typescript": "^5.9.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.9.2"
+  }
+}

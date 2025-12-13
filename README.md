@@ -1,6 +1,6 @@
 # Arxiv MCP Server
 
-An MCP server implementation that integrates arxiv's public api to provide search, and research capabilities.
+An MCP server implementation that integrates arxiv's public api to provide search, and research capabilities to AI Agents.
 
 ## Features
 
@@ -77,7 +77,7 @@ Add this to claude_desktop_config.json:
 
 ### Usage with VS Code
 
-Add the following JSON block to a file callld .vscode/mcp.json in your workspace.
+Add the following JSON block to a file called .vscode/mcp.json in your workspace.
 
 ### Docker
 

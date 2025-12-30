@@ -2,6 +2,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { z } from "zod";
 import { ArxivSearchResponse, formatPapers, makeArxivRequest } from "./utils.js";
+import { randomUUID } from "node:crypto";
 
 import express from "express";
 
@@ -226,7 +227,8 @@ app.all("/mcp", async (req: express.Request, res: express.Response) => {
     const server = getServer();
 
     const transport = new StreamableHTTPServerTransport({
-      sessionIdGenerator: undefined,
+      sessionIdGenerator: () => randomUUID(),
+      enableJsonResponse: true,
     });
 
     res.on("close", () => {

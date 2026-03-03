@@ -1,9 +1,12 @@
 import { XMLParser } from "fast-xml-parser";
 
 export async function makeArxivRequest<T>(url: string): Promise<T | null> {
- 
+  const headers = {
+    Accept: "applicaton/json"
+  }
+
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { headers });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

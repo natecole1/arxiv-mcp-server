@@ -62,7 +62,7 @@ app.post("/mcp", async (req: express.Request, res: express.Response) => {
 
     } else {
       sessionId = req.headers["mcp-session-id"] as string;
-      console.log(sessionId);  
+
       transport = transports[sessionId];
 
       if (!transport) {

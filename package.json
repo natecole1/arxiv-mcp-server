@@ -21,7 +21,6 @@
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "fast-xml-parser": "^5.2.5",
-    "mcp-handler": "^1.0.7",
     "typescript": "^5.9.3",
     "zod": "^3.25.76"
   },

@@ -68,7 +68,7 @@ Add this to claude_desktop_config.json:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://arxiv-mcp-server-suhj.onrender.com"
+
       ]
     }
   }
@@ -107,7 +107,7 @@ Add the following JSON block to a file called .vscode/mcp.json in your workspace
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://arxiv-mcp-server-suhj.onrender.com"
+
       ]
     }
   }
